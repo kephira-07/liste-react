@@ -15,8 +15,8 @@ import {
 } from 'lucide-react';
 
 // --- CONFIGURATION SUPABASE ---
-const SUPABASE_URL = ""; 
-const SUPABASE_ANON_KEY = "";
+const SUPABASE_URL =import.meta.env.VITE_PUBLIC_SUPABASE_URL || ""; 
+const SUPABASE_ANON_KEY =import.meta.env.VITE_PUBLIC_SUPABASE_ANON_KEY || "";
 
 export default function App() {
   const [loading, setLoading] = useState(false);
